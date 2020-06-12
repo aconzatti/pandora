@@ -1,0 +1,52 @@
+version: '3.7'
+
+services:
+
+  # BACKEND SERVER
+  server:
+    container_name: pandora-server
+    build: 
+      context: .
+    networks: 
+      - app-network
+    ports: 
+      - ${SERVER_PORT}:3000
+    env_file: 
+      - .env
+    volumes: 
+      - .:/usr/src/app
+    command:             
+      npm run start:dev
+      
+  
+  # REDIS.   Typerm cache: db=1    |    Bull Queue: db=2
+  redis:
+    container_name: pandora-redis
+    image: redis:6.0.2-alpine
+    networks: 
+      - app-network
+    expose:
+      - "6379"
+    ports: 
+      - ${REDIS_PORT}:6379
+    restart: always
+    command: redis-server                   
+
+  # POSTGRES
+  postgres:
+      container_name: pandora-postgres
+      image: postgres:12.3
+      networks: 
+          - app-network
+      ports: 
+          - ${DB_PORT}:5432
+      environment:
+          POSTGRES_PASSWORD: ${DB_PASSWORD}
+          POSTGRES_USER: ${DB_USER}
+          POSTGRES_DB: ${DB_DATABASE}
+      volumes:
+          - ${DB_VOLUME}:/var/lib/postgresql/data
+      restart: always
+  
+networks:
+  app-network:

@@ -1,0 +1,16 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Dados do usuário"""
+type Usuarios {
+  id: ID!
+  name: String!
+  email: String!
+  phone: String
+}
+
+type Query {
+  """Retorna os dados de todos os usuários"""
+  allUsers(query: String): [Usuarios!]!
+}

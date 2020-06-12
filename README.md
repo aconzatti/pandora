@@ -4,13 +4,17 @@ Generic learn project that provides a initial environment and patterns
 
 
 &nbsp;
-# Features 
+# Implementations
 
-- [ ] Environment variables configuration
+- [x] Docker and Docker Compose configuration
 
-- [ ] Docker and Docker Compose configuration
+- [x] Environment variables configuration
 
-- [ ] Module structure (sample)
+- [x] Project Nestejs with: Fastify, TypeOrm, GraphQL, Bull
+
+- [ ] Generics Args, Classes, Decorators, Types
+
+- [ ] Module structure (user sample)
 
     - [ ] Entity (with relations)
     - [ ] Dto (with validation and GraphQL types)
@@ -21,13 +25,28 @@ Generic learn project that provides a initial environment and patterns
 
 - [ ] TypeORM management migrations
 
+- [ ] Security (Helmet, CORS, CSRF...)
+
 - [ ] User Authentication
 
 - [ ] Roles registrables and manageable
 
 - [ ] Global Auth Guard and Roles Guard for both REST and GraphQL
 
+- [ ] Queues
+
+- [ ] Serialization
+
+- [ ] Compression
+
+- [ ] Middleware (?)
+
+- [ ] Interceptors (?)
+
+- [ ] Task Scheduling
+
 - [ ] Tests
+
 
 
 &nbsp;
@@ -56,5 +75,10 @@ _This learn project uses docker to run dev and prod environment, so you'll need 
 git clone https://github.com/aconzatti/pandora.git project
 cd project
 npm install
+```
+
+if you want, you can change configurations and parameters in .env file (root)
+
+```
 docker-compose up -d
 ```

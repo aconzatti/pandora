@@ -2,7 +2,17 @@
 
 Generic project that provides a initial environment and convention patterns
 
-# Functional requirements 
+&nbsp;
+# Requirements 
+
+- [ ] Module structure
+
+    - [ ] Entities (with relations)
+    - [ ] Dto (with validation and GraphQL types)
+    - [ ] Service
+    - [ ] Controller (REST approuch)
+    - [ ] Resolver (GraphQL approuch)
+    - [ ] Module    
 
 - [ ] User Authentication
 
@@ -13,7 +23,8 @@ Generic project that provides a initial environment and convention patterns
 - [ ] Global Auth Guard and Roles Guard for both REST and GraphQLa
 
 
-# Non-functional requirements
+&nbsp;
+# Stack
 
 - [Nestjs v7.0.0](https://docs.nestjs.com/)
 - [Fastify](https://docs.nestjs.com/techniques/performance)

@@ -1,6 +1,7 @@
 # Generic REST and GraphQL API
 
-Generic project that provides a initial environment and convention patterns
+Generic learn project that provides a initial environment and patterns
+
 
 &nbsp;
 # Requirements 
@@ -9,9 +10,9 @@ Generic project that provides a initial environment and convention patterns
 
 - [ ] Docker and Docker Compose configuration
 
-- [ ] Module structure
+- [ ] Module structure (sample)
 
-    - [ ] Entities (with relations)
+    - [ ] Entity (with relations)
     - [ ] Dto (with validation and GraphQL types)
     - [ ] Service
     - [ ] Controller (REST approuch)
@@ -24,9 +25,9 @@ Generic project that provides a initial environment and convention patterns
 
 - [ ] Roles registrables and manageable
 
-- [ ] Endpoints REST and GraphQL access
-
 - [ ] Global Auth Guard and Roles Guard for both REST and GraphQL
+
+- [ ] Tests
 
 
 &nbsp;

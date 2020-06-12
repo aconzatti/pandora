@@ -4,7 +4,7 @@ Generic learn project that provides a initial environment and patterns
 
 
 &nbsp;
-# Requirements 
+# Features 
 
 - [ ] Environment variables configuration
 

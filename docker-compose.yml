@@ -19,7 +19,7 @@ services:
       npm run start:dev
       
   
-  # REDIS.   Typerm cache: db=1    |    Bull Queue: db=2
+  # REDIS.   Typerm cache: db=1    |    Bull Queue: db=2   |   "Session" Control: db=7
   redis:
     container_name: pandora-redis
     image: redis:6.0.2-alpine

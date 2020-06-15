@@ -12,9 +12,7 @@ Generic learn project that provides a initial environment and patterns
 
 - [x] Create project NesteJS with: Fastify, TypeOrm, GraphQL, Bull
 
-- [ ] Generics Args, Classes, Decorators, Types
-
-- [ ] Modules: Auth | Session | Roles | Roles Grants | User | User Roles 
+- [ ] Modules:  Roles  |  Roles Grants  |  User  |  User Roles  |  Auth  |  Session
 
     - [ ] Entity (with relations)
     - [ ] Dto (with validation and GraphQL types)
@@ -22,6 +20,8 @@ Generic learn project that provides a initial environment and patterns
     - [ ] Controller (REST approuch)
     - [ ] Resolver (GraphQL approuch)
     - [ ] Module    
+
+- [ ] Generics Args, Classes, Decorators, Types
 
 - [ ] TypeORM management migrations
 

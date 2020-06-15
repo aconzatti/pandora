@@ -9,12 +9,11 @@ if ( !process.env.DB_HOST ) {
 }
 
 
-
-// Type Orm Options
-class TypeOrmConfig {
+// Configs
+export class Config {
  
   // TYPEORM OPTIONS
-  static options(): TypeOrmModuleOptions {
+  static typeOrmOptions(): TypeOrmModuleOptions {
 
     return {
       type: 'postgres',
@@ -57,29 +56,19 @@ class TypeOrmConfig {
       ssl: process.env.MODE !== "DEV",
     }
   }
-}
-
-
-// GRAPHQL Options
-class GraphQLConfig {
 
   // GRAPHQL
-  static options() {
+  static graphqlOptions() {
     return {
       autoSchemaFile: 'schema.gql',
       playground: process.env.GRAPHQL_PLAYGROUND == 'true',
       path: process.env.GRAPHQL_PATH
     }
   }
-}
 
-
-
-// Bull Options
-class BullConfig {
 
   // QUEUE
-  static options(): BullModuleOptions {
+  static bullOptions(): BullModuleOptions {
 
     return {
       name: 'audio',
@@ -95,4 +84,4 @@ class BullConfig {
 }
 
 // Exports
-export { TypeOrmConfig, GraphQLConfig, BullConfig }
+// export { ConfigService }

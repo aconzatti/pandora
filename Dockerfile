@@ -1,4 +1,4 @@
-FROM node:12.16.3-alpine
+FROM node:14.4.0-alpine
 
 ## Diretorio de execução do container (exec)
 WORKDIR /usr/src/app

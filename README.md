@@ -53,8 +53,8 @@ Generic learn project that provides a initial environment and patterns
 # Stack
 
 - Docker | Docker Compose
-- Node v12.16.3
-- Postgres v12.3
+- Node v14.4.0
+- Postgres v12.3s
 - Redis v6.0.2 (cache, queue and "session")
 - [Nestjs v7.0.0](https://docs.nestjs.com/)
 - [Fastify](https://docs.nestjs.com/techniques/performance)

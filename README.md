@@ -10,11 +10,11 @@ Generic learn project that provides a initial environment and patterns
 
 - [x] Environment variables configuration
 
-- [x] Project Nestejs with: Fastify, TypeOrm, GraphQL, Bull
+- [x] Create project NesteJS with: Fastify, TypeOrm, GraphQL, Bull
 
 - [ ] Generics Args, Classes, Decorators, Types
 
-- [ ] Module structure (user sample)
+- [ ] Modules: Auth | Session | Roles | Roles Grants | User | User Roles 
 
     - [ ] Entity (with relations)
     - [ ] Dto (with validation and GraphQL types)
@@ -77,7 +77,7 @@ cd project
 npm install
 ```
 
-if you want, you can change configurations and parameters in .env file (root)
+_If you want, you can change configurations and parameters in .env file (root)_
 
 ```
 docker-compose up -d

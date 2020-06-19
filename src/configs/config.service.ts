@@ -48,9 +48,9 @@ class TypeOrmConfig {
         options: {
           host: process.env.REDIS_HOST,          // use service on docker
           port: parseInt(process.env.REDIS_PORT),
-          db: process.env.CACHE_DB
+          db: process.env.REDIS_CACHE_DB
         },
-        duration: parseInt(process.env.CACHE_DURATION) // milliseconds, if not specified in the query ou repo
+        duration: parseInt(process.env.REDIS_CACHE_DURATION) // milliseconds, if not specified in the query ou repo
       },
     
       // If MODE env variable != DEV
@@ -86,7 +86,7 @@ class BullConfig {
       redis: {
         host: process.env.REDIS_HOST,          // use service on docker
         port: parseInt(process.env.REDIS_PORT),
-        db: parseInt(process.env.QUEUE_DB)
+        db: parseInt(process.env.REDIS_QUEUE_DB)
       }
     }
   }

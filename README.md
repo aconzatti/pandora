@@ -6,11 +6,24 @@ Generic learn project that provides a initial environment and patterns
 &nbsp;
 # Implementations
 
-- [x] Docker and Docker Compose configuration
+- [x] Docker and Docker Compose configuration: Node v14.4.0 Alpine, Redis v6.0.2 Alpine, Postgres v12.3
 
 - [x] Environment variables configuration
 
-- [x] Create project NesteJS with: Fastify, TypeOrm, GraphQL, Bull
+- [x] Create project: NesteJS, Fastify, TypeOrm, GraphQL, Bull
+
+
+&nbsp;
+# TODO
+
+- [ ] Shared Modules and Features
+
+    - [ ] Global Modules ( @Global() ): ___
+    - [ ] Decorators: ___
+    - [ ] Types: ___
+    - [ ] Args: ___
+    - [ ] Classes: ___
+    - [ ] Interfaces: ___
 
 - [ ] Modules:  Roles  |  Roles Grants  |  User  |  User Roles  |  Auth  |  Session
 
@@ -20,8 +33,6 @@ Generic learn project that provides a initial environment and patterns
     - [ ] Controller (REST approuch)
     - [ ] Resolver (GraphQL approuch)
     - [ ] Module    
-
-- [ ] Generics Args, Classes, Decorators, Types
 
 - [ ] TypeORM management migrations
 
@@ -39,14 +50,11 @@ Generic learn project that provides a initial environment and patterns
 
 - [ ] Compression
 
-- [ ] Middleware (?)
-
 - [ ] Interceptors (?)
 
 - [ ] Task Scheduling
 
 - [ ] Tests
-
 
 
 &nbsp;
